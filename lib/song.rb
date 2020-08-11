@@ -5,7 +5,7 @@ class Song
   
   def initialize(name)
     @name = name
-   
+    @@all << self
   end
   
   def self.all
@@ -17,9 +17,7 @@ class Song
     artist.add_song(self)
   end
   
-  def all(artist)
-    @@all << artist 
-  end
+  
   
   def self.new_by_filename(file)
     song_info = file.chomp(".mp3").split(" - ")
