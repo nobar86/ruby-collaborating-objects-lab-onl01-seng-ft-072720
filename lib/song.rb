@@ -17,8 +17,8 @@ class Song
     artist.add_song(self)
   end
   
-  def all(song)
-    @@all << song
+  def all(artist)
+    @@all << artist 
   end
   
   def self.new_by_filename(file)
