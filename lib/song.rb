@@ -18,7 +18,7 @@ class Song
   end
   
   def add_artist(artist)
-    @artist << artist 
+    @artist << self 
   end
   
   def self.new_by_filename(file)
