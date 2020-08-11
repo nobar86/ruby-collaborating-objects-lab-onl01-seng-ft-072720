@@ -17,6 +17,9 @@ class Song
     artist.add_song(self)
   end
   
+  def .all(song)
+    @@all << song
+  end
   
   def self.new_by_filename(file)
     song_info = file.chomp(".mp3").split(" - ")
